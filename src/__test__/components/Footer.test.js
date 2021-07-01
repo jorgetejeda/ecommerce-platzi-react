@@ -24,8 +24,6 @@ describe('Footer Snapshot', () => {
 
   test('Comprobar el UI del Footer-copy', () => {
     const footer = mount(<Footer />);
-    expect(footer.find('.Footer-copy').text()).toEqual(
-      'Todos los Izquierdos Reservados',
-    );
+    expect(footer.find('.Footer-copy').text()).toEqual('Todos los Izquierdos Reservados');
   });
 });
