@@ -21,4 +21,11 @@ describe('Footer Snapshot', () => {
     const footer = create(<Footer />);
     expect(footer.toJSON()).toMatchSnapshot();
   });
+
+  test('Comprobar el UI del Footer-copy', () => {
+    const footer = mount(<Footer />);
+    expect(footer.find('.Footer-copy').text()).toEqual(
+      'Todos los Izquierdos Reservados',
+    );
+  });
 });
