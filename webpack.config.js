@@ -42,11 +42,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    port: 3005,
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
